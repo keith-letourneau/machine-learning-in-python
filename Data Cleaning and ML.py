@@ -1,36 +1,3 @@
-#Use of the zip function to combine lists
-
-#This case is one str and one int
-rank = list(range(1,4))
-rank = map(str, rank)
-film_title = ['The Godfather', 'Pulp Fiction', 'Parasite']
-
-final = [x + ' ' + i for x, i in zip(rank, film_title)]
-
-for x in final:
-  print(x)
-
-#Loop through previous list and append to new
-film_title2 = []
-
-for x in film_title:
-  x = 'Title: ' + x
-  film_title2.append(x)
-
-print(film_title2)
-
-#Create a function that takes in a str and returns with smart remark
-def bs(str):
-  print(str + ' is heckin bologna.')
-
-bs('Coca cola')
-
-#Create a function that takes in a int and returns plus 1
-def plus_one(int):
-  print(int + 1)
-
-plus_one(56)
-
 #Plotting with pandas and pyplot with manual data frame
 from pandas import DataFrame
 import matplotlib.pyplot as plt
@@ -123,3 +90,36 @@ x_new = [[4.5]]
 fit = linear_regressor.fit(x, y)  
 
 print(fit.predict(x_new))
+
+#Working with lists
+#Use of the zip function to combine lists
+#This case is one str and one int
+rank = list(range(1,4))
+rank = map(str, rank)
+film_title = ['The Godfather', 'Pulp Fiction', 'Parasite']
+
+final = [x + ' ' + i for x, i in zip(rank, film_title)]
+
+for x in final:
+  print(x)
+
+#Loop through previous list and append to new
+film_title2 = []
+
+for x in film_title:
+  x = 'Title: ' + x
+  film_title2.append(x)
+
+print(film_title2)
+
+#Create a function that takes in a str and returns with smart remark
+def bs(str):
+  print(str + ' is heckin bologna.')
+
+bs('Coca cola')
+
+#Create a function that takes in a int and returns plus 1
+def plus_one(int):
+  print(int + 1)
+
+plus_one(56)
