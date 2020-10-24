@@ -21,9 +21,9 @@ print(film_title2)
 
 #Create a function that takes in a str and returns with smart remark
 def bs(str):
-  print(str + ' is heckin bullshit.')
+  print(str + ' is heckin bologna.')
 
-bs('Homework')
+bs('Coca cola')
 
 #Create a function that takes in a int and returns plus 1
 def plus_one(int):
