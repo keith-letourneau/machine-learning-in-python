@@ -43,7 +43,7 @@ print('Predicted amount of wins for the season with',
 #logistic regression on whether or not 50 games will be won
 #create binary outcome column for classifier
 bos['50 wins'] = ['Yes' if i > 50 
-             else 'No' for i in bos['W']]
+                        else 'No' for i in bos['W']]
 
 x = bos[['PTS', 'AST', '3P', 'oppPTS']]
 y = bos['50 wins']
